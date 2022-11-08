@@ -33,5 +33,25 @@
     width: 100px;  
 }
 
+#mainHomeContainer{
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "containerTxt" "containerImg"
+    "containerNext" "containerNext";
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-columns: 150px 1fr;
+}
+
+#mainHomeContainer > #containerTxt{
+    grid-area: containerTxt;
+}
+
+#mainHomeContainer > #containerImg{
+    grid-area: containerImg;
+}
+
+#mainHomeContainer 
+
 
 
