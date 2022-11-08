@@ -1,13 +1,24 @@
 #mainHome{
+    /* border: 2px solid green; */
     height: 100vh;
     background-color: #141414;
+   
 }
 
 #mainContainer{
+    height: 100%;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    position: relative;
+    
+    /* position: relative; */
+}
+#mainContainer > #imgHome{
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 #imgNext{
     display: flex;
@@ -16,20 +27,28 @@
     width: 100px;
     
 }
+
 #imgNextHome{
     display: flex;
     height: 90%;
     align-items: flex-end;
-    position: absolute;
+    /* position: absolute; */
 }
 
 #imgsHome{
-    display: flex;
+   
+    /* border: 2px solid blue; */
+    
 }
 #akaliImg{
-    padding-top: 5.5em;
+    border: 2px solid red;
+    display: flex;
     justify-content: flex-end;
-    width: 450px;
+    align-items: flex-end;
+    
+}
+#textHome{
+    /* border: 2px solid yellow; */
 }
 
 #primaryTxtHome{
@@ -39,4 +58,25 @@
 
 .secundaryTxtHome{
     color: #10b5bf;
+}
+
+#nextImg{
+    animation: animateNext 2.s infinite;
+    width: 100px;  
+}
+
+#nextImgContainer{
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+   
+}
+
+@keyframes animateNext {
+    0%{margin-bottom: 10px;}
+    50%{margin-bottom: 50px;}
+    100%{margin-bottom: 10px;}
+
+    
+    
 }
