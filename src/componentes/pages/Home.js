@@ -1,25 +1,31 @@
 import React from "react";
 import akaliNeon from '../imgs/akaliNeon.png'
 import nextImg from '../imgs/next.svg'
-import estrelaNeon from '../imgs/estrelaNeon.svg'
 export default function Home(){
     return(
         <>
-        <main id='mainHome' className=''>
-            <section id="mainHomeContainer">
-                <div id="containerTxt" >
-                    <h3 className="secundaryTxtHome">NÓS SOMOS A:</h3>
-                    <h1 id='primaryTxtHome'>ROCK JOB</h1>
-                    <h3 className="secundaryTxtHome">VENHA CONHECER NOSSOS SERVIÇOS</h3>
+        <main class="homepage">
+            <header id="header">
+                <p>teste</p>
+            </header>
+            <nav id="navHomePage" className="text-center container-fluid">
+                <div id="navHomePageContainer" className="row">
+                    <div id="txtContainerHome" className="col-md-6">
+                    <div className="txtHome">
+                        <p className="textSecundary ">NÓS SOMOS A:</p>
+                            <p className=''id="textPrimary">ROCK JOB</p>
+                        <p className="textSecundary">VENHA CONHECER NOSSOS PRODUTOS</p>
+                    </div>
+                    </div>
+                    <div id="imgAkaliContainer" className="col-md-6">
+                        <img className='img-fluid container'src={akaliNeon} alt=""/>    
+                    </div>
                 </div>
-                <div id="containerImg">
-                    <img className='img-fluid' id='akaliImg' src={akaliNeon}/>
+                <div id="nextHomeContainer">
+                    <img className='img-fluid'src={nextImg} alt="" id="imgNext"/>   
                 </div>
-                <div id='containerNext'>
-                    <img src={nextImg}/>
-                </div>
-            </section>
-        </main>
+        </nav>
+   </main>
     
     
         </>

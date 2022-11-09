@@ -1,57 +1,85 @@
-#mainHome{
-    /* border: 2px solid green; */
+
+.homepage{
+    width: 100vw;
     height: 100vh;
+    box-sizing: border-box; 
+    
     background-color: #141414;
 }
 
-#imgNext{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 100px;
+#header{
+    height: 100px;
+    text-align: center;
+    border: 2px solid red;
 }
 
-#akaliImg{
-    border: 2px solid red;
+#navHomePage{
+    height: calc(100% - 180px);
+    display: flex; 
+    flex-direction: column;
+}
+
+/* TEXTO CONTAINER */
+#navHomePageContainer{
+    height: 100%;
+    width: 100%;
+ 
+}
+#txtContainerHome{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
     
 }
-
-#primaryTxtHome{
-    font-size: 5.5em;
-    color: #ffffff;
+#txtHome{
+    max-width: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.secundaryTxtHome{
-    color: #10b5bf;
+.textSecundary{
+    color: #ffff;
+    font-size: 2vw;
+    display: flex;
 }
 
-#nextImg{
-    animation: animateNext 2.s infinite;
-    width: 100px;  
+#textPrimary{
+    display: flex;
+    background-image: linear-gradient(#10b5bf,#4B0082 );
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    /* color: #10b5bf; */
+    font-size: 10vw;
+   
+    
+}
+/* fim texto */
+
+
+/* IMG CONTAINER */
+#imgAkaliContainer{
+    display: flex;
+    align-items: center;
+    
+
 }
 
-#mainHomeContainer{
-    display: grid;
-    width: 100%;
-    grid-template-areas: 
-    "containerTxt" "containerImg"
-    "containerNext" "containerNext";
-    grid-template-rows: 50px 1fr 30px;
-    grid-template-columns: 150px 1fr;
+.img{
+   
+   
+
+}
+/* fim img */
+
+/* NEXT CONTAINER */
+#nextHomeContainer{
+    height: 70px;
 }
 
-#mainHomeContainer > #containerTxt{
-    grid-area: containerTxt;
+#imgNext{
+    
+    width: 70px;
 }
-
-#mainHomeContainer > #containerImg{
-    grid-area: containerImg;
-}
-
-#mainHomeContainer 
-
-
-
