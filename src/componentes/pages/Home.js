@@ -1,13 +1,12 @@
 import React from "react";
 import akaliNeon from '../imgs/akaliNeon.png'
 import nextImg from '../imgs/next.svg'
+import Example from '../pages/Header'
 export default function Home(){
     return(
         <>
         <main class="homepage">
-            <header id="header">
-                <p>teste</p>
-            </header>
+            <Example/>
             <nav id="navHomePage" className="text-center container-fluid">
                 <div id="navHomePageContainer" className="row">
                     <div id="txtContainerHome" className="col-md-6">
