@@ -1,56 +1,46 @@
-import React, { useState } from 'react';
+import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
+	Navbar,
+	NavItem,
+	NavbarToggler,
+	Collapse,
+	NavLink,
+	Nav,
+	NavbarBrand
 } from 'reactstrap';
+import LogoCompleto from '../imgs/logoCompleto.png'
 
-function Example(args) {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Header() {
 
-  const toggle = () => setIsOpen(!isOpen);
+	const [isOpen, setIsOpen] = React.useState(false);
 
-  return (
-    <div>
-      <Navbar {...args}>
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="me-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/">Components</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
-                GitHub
-              </NavLink>
-            </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-          </Nav>
-          <NavbarText>Simple Text</NavbarText>
-        </Collapse>
-      </Navbar>
-    </div>
-  );
+	return (
+		<div className='container-fluid'>
+			<Navbar color="" expand="sm">
+          <NavbarBrand href="/">
+            <img id='imgLogoHeader'src={LogoCompleto}/>
+          </NavbarBrand>
+          <NavbarToggler onClick={() => { setIsOpen(!isOpen) }} />
+            <Collapse isOpen={isOpen} navbar>
+              <Nav className="ml-auto" navbar id='navItens'>
+                <NavItem >
+                  <NavLink  href="#">Home</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="#">EloJob</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="#">DuoBoost</NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="#">Coach</NavLink>
+                </NavItem>
+              </Nav>
+            </Collapse>
+			</Navbar>
+		</div >
+	);
 }
 
-export default Example;
+
