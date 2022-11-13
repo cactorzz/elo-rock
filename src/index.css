@@ -1,9 +1,7 @@
-
-.homepage{
-    width: 100vw;
+#mainHome{
+   
     height: 100vh;
     box-sizing: border-box; 
-    
     background-color: #141414;
 }
 
@@ -90,3 +88,5 @@
     width: 70px;
 }
 
+
+/* ~~~~~~~~~~~~~~ SERVICEPAGE ~~~~~~~~~~~~~~*/

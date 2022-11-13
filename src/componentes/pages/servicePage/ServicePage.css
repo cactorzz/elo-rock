@@ -1,0 +1,131 @@
+#servicePage{
+   
+    height: 100vh;
+    box-sizing: border-box; 
+    background: linear-gradient(-45deg, #000000 0%, rgb(19, 16, 20) 13%, rgb(22, 15, 26) 25%, rgb(28, 14, 34)  38%, rgb(32, 12, 41) 50%,  rgb(38, 6, 51) 62%, rgb(53, 6, 73)  75%, rgb(55, 2, 78)  87%, rgb(78, 2, 110) 100%);;
+    background-size: 400% 400%;
+    position: relative;
+    animation: animate 7.5s ease-in-out infinite;
+    
+}
+
+#serviceTextContainer{
+    height: 250px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#serviceCardsContainer{
+    height: calc(100% - 250px);
+    display: flex;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: ;
+    background-image: url(../../imgs/ondaEsquerda.png);
+    justify-content: center;
+}
+
+#serviceTextPrimary{
+   color: #ffffff;
+
+}
+
+#serviceTextSecundary{
+    color: #10b5bf;
+}
+
+ /* #serviceCard1{
+  
+    
+}  */
+#Card1{
+    width: 18rem;
+    height: 16rem;
+    box-shadow: 0px 0px 15px #AF0171,  inset 0 0 5px #AF0171;
+    background-color: rgba(0, 0, 0, 20%);
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+#card1Header{
+    color: white;
+    background-color:rgba(0, 0, 0, 30%);
+    /* box-shadow: 0 5px 20px #AF0171; */
+}
+#card1Footer{
+    background-color: rgba(0, 0, 0, 30%);
+    /* box-shadow: 0 -5px 20px #AF0171; */
+}
+#buttonCard1{
+    color: black;
+    border: 2px solid white;
+    background-color: transparent ;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5 ease-in-out;
+}
+#buttonCard1:hover{
+    box-shadow: 0 0 10px #E80F88, inset 0 0 15px #E80F88;
+    text-shadow: 0 0 10px #E80F88;
+    border: 2px solid #E80F88;
+    color: #E80F88;
+}
+
+/* ~~~~~~~~~~~~~~~ card container  ~~~~~~~~~~~~~~ */
+/* body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #section{
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    background: linear-gradient(-45deg, #000000 0%, rgb(19, 16, 20) 13%, rgb(22, 15, 26) 25%, rgb(28, 14, 34)  38%, rgb(32, 12, 41) 50%,  rgb(38, 6, 51) 62%, rgb(53, 6, 73)  75%, rgb(55, 2, 78)  87%, rgb(78, 2, 110) 100%);;
+    background-size: 400% 400%;
+    position: relative;
+    animation: animate 7.5s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  .sectionteste{
+    padding: 10px;
+  }
+  /* h1{
+    color: #fff;
+    background: rgba(255,255,255,.2);
+    padding: 20px;
+    font-size: 50px;
+    border-radius: 10px;
+  } */
+  
+  @keyframes animate{
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+
+#cardsection{
+ 
+  /* border: 2px solid red; */
+  display: flex;
+  
+  justify-content: center;
+ 
+}
+
+.CardText{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

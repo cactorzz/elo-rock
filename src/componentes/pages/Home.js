@@ -5,7 +5,7 @@ import Header from '../pages/Header'
 export default function Home(){
     return(
         <>
-        <main class="homepage">
+        <main id="mainHome">
             <div><Header/></div>
             <nav id="navHomePage" className="text-center container-fluid">
                 <div id="navHomePageContainer" className="row">
