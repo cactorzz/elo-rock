@@ -1,0 +1,112 @@
+#homePage{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box; 
+    background-image: url('../../imgs/Viego_bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#homeContent{
+    height: calc(100% - 100px);
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#textHomeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+#textSecundary{
+    color: #ffff;
+    font-size: 2vw;
+    display: flex;
+    text-shadow: 5px 5px 25px black;
+}
+
+#textPrimary{
+    display: flex;
+    color: white;
+    font-size: 10vw;
+    text-shadow: 5px 5px 25px black;
+    /* background-image: linear-gradient(#10b5bf,#4B0082 );
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    color: #10b5bf; */
+}
+
+#homeButtonsContainer{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    /* border: 2px solid pink; */
+}
+/* .btnHome1{
+    font-size: 40px;
+   background-color: #C21010;
+   color: white;
+}
+
+.btnHome1:hover{
+    color: white;
+    background-color: #FF1E00;
+} */
+.btnHome1{
+    --bs-btn-font-size: 2em;
+    --bs-btn-font-weight: 1000;
+    --bs-btn-color: white;
+    --bs-btn-bg: #C21010;
+    --bs-btn-border-color: #C21010;
+    --bs-btn-border-radius: .9rem;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #C21010;
+    --bs-btn-hover-border-color: white;
+    --bs-btn-active-color: white;
+    --bs-btn-active-bg: #990000;
+    --bs-btn-active-border-color: white;
+    box-shadow: 2px 2px 15px #C21010;
+
+  }
+  .btnHome1:hover{
+    box-shadow: 2px 2px 15px white;
+
+  }
+
+@media(max-width: 990px){
+    .btnHome1{
+        --bs-btn-font-size: 1.5em;
+    }
+  }
+
+@media(max-width: 760px){
+    #homeButtonsContainer{
+        flex-wrap: wrap;
+    }
+    #textPrimary{
+        font-size: 17vw;
+    }
+    #textSecundary{
+        font-size: 3vw;
+    }
+}
+
+@media(max-width: 410px){
+    .btnHome1{
+        --bs-btn-font-size: 1em;  
+    }
+    #textHomeContainer{
+        height: 60%;
+    }
+    #homeButtonsContainer{
+        height: 40%;
+    }
+}
