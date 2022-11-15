@@ -6,11 +6,13 @@ import ServicePage from './componentes/pages/servicePage/ServicePage';
 import Cards from './componentes/pages/servicePage/Card1'
 import Example from './componentes/pages/Header';
 import ServiceChoose from './componentes/pages/ServiceChoose/ServiceChoose';
+import SelectButton from './componentes/pages/ServiceChoose/SelectButton/SelectButtons'
 
 function App() {
   return (
    <>
-    <ServiceChoose/>
+    {/* <ServiceChoose/> */}
+    <SelectButton/>
    </>
   );
 }
