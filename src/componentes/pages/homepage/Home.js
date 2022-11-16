@@ -1,9 +1,12 @@
 import React from "react";
-import { Button } from "reactstrap";
+
+import Header from "../header/Header";
 export default function Home(){
     return(
         <main id='homePage'>
-            <div id='header'></div>
+            <div id='header'>
+                <Header/>
+            </div>
             <div id='homeContent'>
                 <div id='textHomeContainer' >
                     <h1 id='textPrimary' className="h1">ELOROCK</h1>

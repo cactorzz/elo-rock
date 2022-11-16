@@ -2,12 +2,12 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'reactstrap';
 import Home from './componentes/pages/homepage/Home'
-import Example from './componentes/pages/Header';
+import Header from './componentes/pages/header/Header';
 
 function App() {
   return (
    <>
-    <Home/>
+    <Header/>
    </>
   );
 }
