@@ -1,10 +1,11 @@
 import React from 'react'
 import PlatinaImg from '../../imgs/platinaImg.png'
 import ChallangerImg from '../../imgs/ChallangerImg.png'
+
 export default function ServiceChoose(){
     return(
         <>
-        <section id='ServiceChooseMain'>
+        <section id='ServiceChooseMain'>   
             <div className='container-fluid' id='headerChoose'>
                 <select id='selectService' className='form-select form-select-lg mb-3" aria-label=".form-select-lg example'>
                 <option selected>Selecione seu serviço</option>
