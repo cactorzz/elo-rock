@@ -16,7 +16,7 @@ export default function ServiceChoose(){
             </div>
             <div id='eloChoose'>
                 <div id='eloAtual'>
-                    <h1 className='h1Txt'>ELO ATUAL</h1>
+                    {/* <h1 className='h1Txt'>ELO ATUAL</h1>
                     <img id='PlatinaImg' className='eloImg' src={PlatinaImg}></img>
                     <div id='selectYourEloContainer'>
                         <div id='containerSelectYourElo'>
@@ -38,32 +38,32 @@ export default function ServiceChoose(){
                                 <option value="4">IV</option>
                             </select>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div id='eloDesejado'>
-                <h1 className='h1Txt'>ELO DESEJADO</h1>
-                    <img id='PlatinaImg'className='eloImg'src={ChallangerImg}></img>
-                    <div id='selectRequireEloContainer'>
-                        <div id='containerSelectRequireElo'>
-                            <select id='SelectRequireElo' className='form-select form-select-lg mb-3" aria-label=".form-select-lg example selectYourElo'>
-                                <option selected value="1">Ferro</option>
-                                <option value="2">Bronze</option>
-                                <option value="3">Prata</option>
-                                <option value="4">Ouro</option>
-                                <option value="5">Platina</option>
-                                <option value="6">Diamante</option>
-                                <option value="7">Mestre</option>
-                            </select>
-                        </div>
-                        <div id='selectDivison'>
-                            <select id='SelectRequireDivison' className='form-select form-select-lg mb-3" aria-label=".form-select-lg example selectYourElo'>
-                                <option selected value="1">I</option>
-                                <option value="2">II</option>
-                                <option value="3">III</option>
-                                <option value="4">IV</option>
-                            </select>
-                        </div>
-                    </div>
+                    {/* <h1 className='h1Txt'>ELO DESEJADO</h1>
+                        <img id='PlatinaImg'className='eloImg'src={ChallangerImg}></img>
+                        <div id='selectRequireEloContainer'>
+                            <div id='containerSelectRequireElo'>
+                                <select id='SelectRequireElo' className='form-select form-select-lg mb-3" aria-label=".form-select-lg example selectYourElo'>
+                                    <option selected value="1">Ferro</option>
+                                    <option value="2">Bronze</option>
+                                    <option value="3">Prata</option>
+                                    <option value="4">Ouro</option>
+                                    <option value="5">Platina</option>
+                                    <option value="6">Diamante</option>
+                                    <option value="7">Mestre</option>
+                                </select>
+                            </div>
+                            <div id='selectDivison'>
+                                <select id='SelectRequireDivison' className='form-select form-select-lg mb-3" aria-label=".form-select-lg example selectYourElo'>
+                                    <option selected value="1">I</option>
+                                    <option value="2">II</option>
+                                    <option value="3">III</option>
+                                    <option value="4">IV</option>
+                                </select>
+                            </div>
+                        </div> */}
                 </div>
             </div>
             <div id='footerChoose'>
