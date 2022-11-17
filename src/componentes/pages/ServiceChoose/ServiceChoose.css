@@ -35,12 +35,53 @@
 }
 /* FIM HEADERSERVICE */
 
-
+/* FINALITY SERVICE */
 #finalityService{
     grid-area: item2;
     width: 350px;
 }
 
+#inputFilityContainer{
+    width: 100%;
+    padding: 10px;
+}
+
+#txtFinality{
+    height: 70px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#adicionaisFinality{
+    height: calc(100% - 350px);
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+}
+#finalizarFinality{
+    height: 280px;
+    border: 2px solid blue;
+}
+#inputFinality{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+#textCheckbox{
+    padding-left: 10px;
+}
+
+#textInput{
+    padding-left: 10px;
+}
+/* FIM FINALITY SERVICE */
 /* INCICIO SERVICE CONTENT */
 #serviceContent{
     grid-area: item3;

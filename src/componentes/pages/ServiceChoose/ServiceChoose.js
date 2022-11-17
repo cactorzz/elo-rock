@@ -23,7 +23,57 @@ export default function ServiceChoose(){
                     </select>
                 </div>
             </div>
-            <div className='div item2' id='finalityService'>teste2</div>
+            <div className='div item2' id='finalityService'>
+                <div id='txtFinality'>
+                    <h2>SERVIÇOS ADICIONAIS</h2>
+                </div>
+                <div id='adicionaisFinality'>
+                    <div id='inputFinality'>
+                        <div id='inputFilityContainer'>
+                            <div class="input-group-text" >
+                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Lorem ipsum dolor. </div>
+                            </div>
+                        </div>
+                        <div id='inputFilityContainer'>
+                            <div class="input-group-text" >
+                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Lorem ipsum dolor. </div>
+                            </div>
+                        </div>
+                        <div id='inputFilityContainer'>
+                            <div class="input-group-text" >
+                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Lorem ipsum dolor. </div>
+                            </div>
+                        </div>
+                        <div id='inputFilityContainer'>
+                            <div class="input-group-text" >
+                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Lorem ipsum dolor. </div>
+                            </div>
+                        </div>
+                        <div id='inputFilityContainer'>
+                            <div class="input-group-text" >
+                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Lorem ipsum dolor. </div>
+                            </div>
+                        </div>
+                        <div id='inputFilityContainer'>
+                            <div class="input-group-text" >
+                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Lorem ipsum dolor. </div>
+                            </div>
+                        </div>
+                        <div id='inputFilityContainer'>
+                            <div class="input-group-text" >
+                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Lorem ipsum dolor. </div>
+                            </div>
+                        </div>
+                        
+                       
+                        
+                    </div>              
+                </div>
+                <div id='finalizarFinality'>
+
+                </div>
+
+            </div>
             <div className='div' id='serviceContent'>
                 <div id='eloAtual'>
                     <div className='txtServiceContent'>
