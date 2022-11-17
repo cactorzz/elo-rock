@@ -83,12 +83,14 @@ export default function ServiceChoose(){
                         <img src={prataLol} className='imgEloService'></img>
                     </div>
                     <div className='divsionServiceContent'>
-                        <img src={ferroLol} className='imgEloDivision'></img>
-                        <img src={bronzeLol} className='imgEloDivision'></img>
-                        <img src={prataLol} className='imgEloDivision'></img>
-                        <img src={ouroLol} className='imgEloDivision'></img>
-                        <img src={platinaLol} className='imgEloDivision'></img>
-                        <img src={diamanteLol} className='imgEloDivision'></img>
+                        <div className='containerDivImg'>
+                            <img src={ferroLol} className='imgEloDivision'></img>
+                            <img src={bronzeLol} className='imgEloDivision'></img>
+                            <img src={prataLol} className='imgEloDivision'></img>
+                            <img src={ouroLol} className='imgEloDivision'></img>
+                            <img src={platinaLol} className='imgEloDivision'></img>
+                            <img src={diamanteLol} className='imgEloDivision'></img>
+                        </div>
                         {/* <img src={mestreLol} className='imgEloDivision'></img> */}
                     </div>
                 </div>
@@ -100,12 +102,14 @@ export default function ServiceChoose(){
                         <img src={diamanteLol} className='imgEloService'></img>
                     </div>
                     <div className='divsionServiceContent'>
-                        <img src={ferroLol} className='imgEloDivision'></img>
-                        <img src={bronzeLol} className='imgEloDivision'></img>
-                        <img src={prataLol} className='imgEloDivision'></img>
-                        <img src={ouroLol} className='imgEloDivision'></img>
-                        <img src={platinaLol} className='imgEloDivision'></img>
-                        <img src={diamanteLol} className='imgEloDivision'></img>
+                        <div className='containerDivImg'>
+                            <img src={ferroLol} className='imgEloDivision'></img>
+                            <img src={bronzeLol} className='imgEloDivision'></img>
+                            <img src={prataLol} className='imgEloDivision'></img>
+                            <img src={ouroLol} className='imgEloDivision'></img>
+                            <img src={platinaLol} className='imgEloDivision'></img>
+                            <img src={diamanteLol} className='imgEloDivision'></img>
+                        </div>
                         {/* <img src={mestreLol} className='imgEloDivision'></img> */}
                     </div>
                 </div>
