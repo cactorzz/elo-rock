@@ -9,7 +9,7 @@ import {
 	Nav,
 	NavbarBrand
 } from 'reactstrap';
-import LogoCompleto from '../imgs/logoCompleto.png'
+
 
 export default function Header() {
 
@@ -19,7 +19,7 @@ export default function Header() {
 		<div className='container-fluid'>
 			<Navbar color="" expand="sm">
           <NavbarBrand href="/">
-            <img id='imgLogoHeader'src={LogoCompleto}/>
+            <img id='imgLogoHeader'src=''/>
           </NavbarBrand>
           <NavbarToggler onClick={() => { setIsOpen(!isOpen) }} />
             <Collapse isOpen={isOpen} navbar>

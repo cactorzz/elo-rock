@@ -1,143 +1,104 @@
 #ServiceChooseMain{
-    width: 100vw;
     height: 100vh;
     box-sizing: border-box; 
     background-image: url('../../imgs/logoPentakill.jpg'); 
-    background-position: center;
-    
-    
-   
-    
-
-    /* background: linear-gradient(-40deg, rgba(36,0,0,1) 0%, rgba(121,9,9,1) 59%, rgba(255,0,0,1) 100%);
-    background-size: 400% 400%;
-    position: relative;
-    animation: animate 7.5s ease-in-out infinite; */
-
-    /* border: 2px solid red; */
+    background-position: center; 
 }
 
-.h1Txt{
-    color: white;
+#ServiceChooseMain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex: 1 0 auto;
+    grid-template-areas: 
+    "item1 item1 item2"
+    "item3 item3 item2"
+    "item4 item4 item2";
+   
+}
+.div{
+    border: 2px solid red;
+}
+/* INICIO HEADERSERVICE */
+#headerService{
+    grid-area: item1;
+    height: 100px;
 }
 #headerChoose{
-    height: 110px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 100%;
 }
-
-
-
 #selectService{
-    text-align: center;
-    width: 300px;
-    height: 60px;
-    border-radius: 20px;
+    width: 25%;
+}
+/* FIM HEADERSERVICE */
+
+
+#finalityService{
+    grid-area: item2;
+    width: 350px;
 }
 
-/* ELOCHOOSE */
-/* ELO ATUAL */
-#eloChoose{
-    height: calc(100% - 310px );
+/* INCICIO SERVICE CONTENT */
+#serviceContent{
+    grid-area: item3;
+    height: 465px;
     display: flex;
+    flex-direction: row;
 }
-#eloAtual, #eloDesejado{
+#eloAtual{
     width: 50%;
-    box-shadow: 2px 2px 12px white;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 15px;
-    margin-left: 10px; 
-    margin-right: 10px; 
-    margin-bottom: 10px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around ;
-    align-items: center;
-    
-}
-.eloImg{
-    width: 200px;
+    height: 100%;
+    border: 2px solid blue;
 }
 #eloDesejado{
     width: 50%;
+    height: 100%;
+    border: 2px solid blue;
 }
-#selectYourEloContainer, #selectRequireEloContainer{
+.txtServiceContent{
     width: 100%;
+    height: 10%;
     display: flex;
     justify-content: center;
-}
-.selectYourElo, #SelectRequireElo, #SelectRequireDivison{
-    display: flex;
-    align-items: center;
-    height: 50px;
-}
-
-#containerSelectYourElo, #containerSelectRequireElo{
-    width: 170px;
-    padding-right: 20px;
-}
-
-
-#addServices{
-    width: 100%;
-    height: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    box-shadow: 4px 4px 35px black;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
-}
-#fullValue{
-    width: 100%;
-    height: 100%;
     color: white;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    box-shadow: 5px 5px 15px greenyellow;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
+    border: 2px solid pink;
+}
+.imgServiceContent{
+    width: 100%;
+    height: 70%;
+    border: 2px solid pink;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+
+}
+.imgEloService{
+    width: 270px;
+}
+
+.divsionServiceContent{
     
-}
-
-#footerChoose{
-    height: 200px;
+    height: 20%;
     display: flex;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    /* background-color: grey; */
+    align-items: center;
+    justify-self: center;
+    border: 2px solid pink;
+}
+#imgDivision{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid orange;
+}
+.imgEloDivision{
+    width: 82px;
 }
 
-@media(max-width: 600px){
-    #eloChoose{
-        height: 100vh;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-    }
-    #eloAtual, #eloDesejado{
-        width: 100%;
-    }
-    #footerChoose{
-        height: 50%;
-        flex-wrap: wrap;
-        
-        justify-content: center;
-        align-items: center;
-    }
-    #ServiceChooseMain{
-        height: 100%;
-    }
+/* FIM SERVICE CONTENT */
+#footerService{
+    grid-area: item4;
+    height: 100px;
 }
