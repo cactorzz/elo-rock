@@ -1,156 +1,113 @@
-#ServiceChooseMain{
-    height: 100vh;
+*{
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box; 
-    background-image: url('../../imgs/logoPentakill.jpg'); 
-    background-position: center; 
+}
+#ServiceChooseMain{
+    height: 100vh;   
+    display: flex;
 }
 
-#ServiceChooseMain{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    flex: 1 0 auto;
-    grid-template-areas: 
-    "item1 item1 item2"
-    "item3 item3 item2"
-    "item4 item4 item2";
-   
+/* main content */
+#mainContent{
+    height: 100%;
+    width: 70%;
 }
-.div{
-    border: 2px solid red;
-}
-/* INICIO HEADERSERVICE */
+
 #headerService{
-    grid-area: item1;
-    
-    
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #headerChoose{
     display: flex;
-    align-items: center;
+    align-content: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
 }
 #selectService{
-    width: 30%;
-    font-size: 1.8em;
+    font-size: 1.7em;
+    width: 310px;
 }
-/* FIM HEADERSERVICE */
-
-/* FINALITY SERVICE */
-#finalityService{
-    grid-area: item2;
-    width: 400px;
+/* FIM MAIN CONTENT */
+/* SERVICE CONTENT */
+#serviceContent{
     
+    height: 70%;
+    display: flex;
+
+}
+#eloAtual, #eloDesejado{
+    width: 50%;
+    height: 100%;
+   
+}
+.txtServiceContent{
+    
+    height: 10%;
+    text-align: center;
+}
+.imgServiceContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+}
+.divisionServiceContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15%;
 }
 
-#inputFilityContainer{
-    width: 100%;
-    padding: 10px;
-}
+
+/* FIM MAIN CONTENT */
 
 #txtFinality{
     height: 10%;
-    border: 2px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
 }
 #adicionaisFinality{
-   height: 60%;
-    border: 2px solid red;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 15px;
-}
-.containerDivImg{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#finalizarFinality{
-    height: 30%;
-    border: 2px solid blue;
-}
-#inputFinality{
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column
-}
-#textCheckbox{
-    padding-left: 10px;
-}
-
-#textInput{
-    padding-left: 10px;
-}
-/* FIM FINALITY SERVICE */
-/* INCICIO SERVICE CONTENT */
-#serviceContent{
-    grid-area: item3;
-    display: flex;
-    flex-direction: row;
-}
-#eloAtual{
-    width: 50%;
-    height: 100%;
-    border: 2px solid blue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-#eloDesejado{
-    width: 50%;
-    height: 100%;
-    border: 2px solid blue;
-}
-.txtServiceContent{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    color: white;
-    border: 2px solid pink;
-}
-.imgServiceContent{
-    width: 100%;
     height: 70%;
-    border: 2px solid pink;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.imgEloService{
-    width: 270px;
-}
-
-.divsionServiceContent{
-    height: 20%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    border: 2px solid pink;
-}
-#imgDivision{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: 2px solid orange;
 }
-.imgEloDivision{
-    width:70px;
+#finalizarFinality{
+   
+}
+/* FOOTER CONTENT */
+#footerService{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* FIM FOOTER CONTENT */
+
+
+
+
+/* MAIN FINALIZATE */
+#mainFinalizate{
+    height: 100%;
+    width: 30%;
+    border: 2px solid red;
 }
 
-/* FIM SERVICE CONTENT */
-#footerService{
-    grid-area: item4;
+#finalityService{
+    height: 100%;
+}
+
+
+/* FIM MAIN FINALIZATE */
+
+
+.imgEloService{
+    width: 200px;
+}
+.imgEloDivision{
+    width: 50px;
 }
