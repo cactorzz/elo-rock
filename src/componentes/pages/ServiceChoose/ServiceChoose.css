@@ -13,9 +13,9 @@
     height: 100%;
     width: 70%;
     box-shadow: 5px 5px 25px black;
-    background-image: url('../../imgs/lol.jpg');
-    background-position: 80%;
-    background-position: center;
+    background-image: url('../../imgs/KarthusImg.jpg');
+    
+    background-position: top;
     background-repeat: no-repeat;
 }
 
