@@ -12,6 +12,10 @@
 #mainContent{
     height: 100%;
     width: 70%;
+    box-shadow: 5px 5px 25px black;
+    background-image: url('../../imgs/logoPentakill.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #headerService{
@@ -33,18 +37,24 @@
 /* FIM MAIN CONTENT */
 /* SERVICE CONTENT */
 #serviceContent{
-    
     height: 70%;
     display: flex;
+    
 
 }
 #eloAtual, #eloDesejado{
     width: 50%;
     height: 100%;
+    
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -10px;
+    padding: 10px;
    
 }
 .txtServiceContent{
-    
+    color: white;
     height: 10%;
     text-align: center;
 }
@@ -59,6 +69,15 @@
     align-items: center;
     justify-content: center;
     height: 15%;
+    border: 1px solid  rgb(0, 0, 0, 40%);
+    box-shadow: 1px 10px 25px #7a200d;
+    background-color: rgb(0, 0, 0, 30%);
+    backdrop-filter: blur(2px);
+    border-radius: 50px;
+   
+}
+#teste{
+    width: 100px;
 }
 
 
@@ -71,11 +90,55 @@
     justify-content: center;
 }
 #adicionaisFinality{
-    height: 70%;
-    border: 2px solid orange;
+    height: 50%;
+    border-bottom: 1px solid grey;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll
+}
+.text-decoration-line-through{
+    color: red;
+}
+#inputFinality{
+    width: 100%;
+    height: 100%;
+}
+#inputFilityContainer{
+    padding: 10px;
 }
 #finalizarFinality{
-   
+   height: 40%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+}
+#finalPrice{
+    display: flex;
+}
+
+#cupomFinal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.precoDesconto{
+    color: green;
+}
+#imgDesconto{
+    width: 50px;
+    
+}
+
+#cumpomDesconto{
+    color: white;
+    background-color: green;
+    display: flex;
 }
 /* FOOTER CONTENT */
 #footerService{
@@ -84,6 +147,13 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: white;
+    font-size: 0.8em;
+    box-shadow: 5px 5px 25px black;
+    background-color: rgb(0, 0, 0, 70%);
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+   
 }
 /* FIM FOOTER CONTENT */
 
@@ -94,20 +164,26 @@
 #mainFinalizate{
     height: 100%;
     width: 30%;
-    border: 2px solid red;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-color:  linear-gradient(#444cf7 0.5px, transparent 0.5px), linear-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
 }
 
 #finalityService{
     height: 100%;
 }
 
-
+.btn-finalizar{
+    box-shadow: 1px 10px 25px black;
+}
 /* FIM MAIN FINALIZATE */
 
 
 .imgEloService{
-    width: 200px;
+    width: 300px;
 }
 .imgEloDivision{
-    width: 50px;
+    width: 60px;
 }
