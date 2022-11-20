@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import ferroLol from '../../imgs/icones_elo_lol/ferroLol.png'
 import bronzeLol from '../../imgs/icones_elo_lol/bronzeLol.png'
 import prataLol from '../../imgs/icones_elo_lol/prataLol.png'
@@ -10,6 +10,18 @@ import cupomDesconto from '../../imgs/CupomDesconto.png'
 
 
 export default function ServiceChoose(){
+
+    const [imgEloAtual, setImg]=useState(prataLol)
+    const [imgEloDesejado, setImgDesejado]=useState(diamanteLol)
+   
+    const focarMiniatura = () =>{
+
+        if(onclick === document.getElementById('ferroMini')){
+            return ()=>setImg(ferroLol)
+        }else if(document.getElementById('bronzeMini')){
+            return()=>setImg(bronzeLol)
+        }    
+    }   
     return(
         <>
         <section id='ServiceChooseMain'> 
@@ -30,17 +42,17 @@ export default function ServiceChoose(){
                             <h1>ELO ATUAL</h1>
                         </div>
                         <div className='imgServiceContent'>
-                            <img src={prataLol} className='imgEloService'></img>
+                            <img src={imgEloAtual} className='imgEloService'></img>
                             
                         </div>
                         <div className='divisionServiceContent'>
                             <div className='containerDivImg'>
-                                <img src={ferroLol} className='imgEloDivision'></img>
-                                <img src={bronzeLol} className='imgEloDivision'></img>
-                                <img src={prataLol} className='imgEloDivision'></img>
-                                <img src={ouroLol} className='imgEloDivision'></img>
-                                <img src={platinaLol} className='imgEloDivision'></img>
-                                <img src={diamanteLol} className='imgEloDivision'></img>
+                                <img src={ferroLol} className='imgEloDivision' id='ferroMini'onClick={focarMiniatura()}></img>
+                                <img src={bronzeLol} className='imgEloDivision' id='bronzeMini' onClick={focarMiniatura()}></img>
+                                <img src={prataLol} className='imgEloDivision' id='prataMini' onClick={()=>setImg(prataLol)}></img>
+                                <img src={ouroLol} className='imgEloDivision' id='ouroMini' onClick={()=>setImg(ouroLol)}></img>
+                                <img src={platinaLol} className='imgEloDivision' id='platinaMini' onClick={()=>setImg(platinaLol)}></img>
+                                <img src={diamanteLol} className='imgEloDivision' id='diamanteMini' onClick={()=>setImg(diamanteLol)}></img>
                             </div>
                             {/* <img src={mestreLol} className='imgEloDivision'></img> */}
                         </div>
@@ -50,16 +62,16 @@ export default function ServiceChoose(){
                             <h1>ELO DESEJADO</h1>
                         </div>
                         <div className='imgServiceContent'>
-                            <img src={diamanteLol} className='imgEloService'></img>
+                            <img src={imgEloDesejado} className='imgEloService'></img>
                         </div>
                         <div className='divisionServiceContent'>
                             <div className='containerDivImg'>
-                                <img src={ferroLol} className='imgEloDivision'></img>
-                                <img src={bronzeLol} className='imgEloDivision'></img>
-                                <img src={prataLol} className='imgEloDivision'></img>
-                                <img src={ouroLol} className='imgEloDivision'></img>
-                                <img src={platinaLol} className='imgEloDivision'></img>
-                                <img src={diamanteLol} className='imgEloDivision'></img>
+                                <img src={ferroLol} className='imgEloDivision' onClick={()=>setImgDesejado(ferroLol)}></img>
+                                <img src={bronzeLol} className='imgEloDivision' onClick={()=>setImgDesejado(bronzeLol)}></img>
+                                <img src={prataLol} className='imgEloDivision' onClick={()=>setImgDesejado(prataLol)}></img>
+                                <img src={ouroLol} className='imgEloDivision' onClick={()=>setImgDesejado(ouroLol)}></img>
+                                <img src={platinaLol} className='imgEloDivision' onClick={()=>setImgDesejado(platinaLol)}></img>
+                                <img src={diamanteLol} className='imgEloDivision' onClick={()=>setImgDesejado(diamanteLol)}></img>
                             </div>
                             {/* <img src={mestreLol} className='imgEloDivision'></img> */}
                         </div>
@@ -77,33 +89,33 @@ export default function ServiceChoose(){
                     <div id='adicionaisFinality'>
                         <div id='inputFinality'>
                             <div id='inputFilityContainer'>
-                                <div class="input-group-text" >
-                                    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Lorem ipsum dolor. </div>
+                                <div className="input-group-text" >
+                                    <input className="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Flash no D (GRÁTIS)</div>
                                 </div>
                             </div>
                             <div id='inputFilityContainer'>
-                                <div class="input-group-text" >
-                                    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Lorem ipsum dolor. </div>
+                                <div className="input-group-text" >
+                                    <input className="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Flash no F (GRÁTIS)</div>
                                 </div>
                             </div>
                             <div id='inputFilityContainer'>
-                                <div class="input-group-text" >
-                                    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Lorem ipsum dolor. </div>
+                                <div className="input-group-text" >
+                                    <input className="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Chat desligado (GRÁTIS)</div>
                                 </div>
                             </div>
                             <div id='inputFilityContainer'>
-                                <div class="input-group-text" >
-                                    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Lorem ipsum dolor. </div>
+                                <div className="input-group-text" >
+                                    <input className="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Horário específico (+25%)</div>
                                 </div>
                             </div>
                             <div id='inputFilityContainer'>
-                                <div class="input-group-text" >
-                                    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Lorem ipsum dolor. </div>
+                                <div className="input-group-text" >
+                                    <input className="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Lane específica (+15%)</div>
                                 </div>
                             </div>
                             <div id='inputFilityContainer'>
-                                <div class="input-group-text" >
-                                    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Lorem ipsum dolor. </div>
+                                <div className="input-group-text" >
+                                    <input className="form-check-input mt-0 disabled" type="checkbox" value="" aria-label="Checkbox for following text input"/><div id='textCheckbox'>Serviço prioritário (+20%)</div>
                                 </div>
                             </div>
                         
@@ -118,7 +130,6 @@ export default function ServiceChoose(){
                         </div>
                         <div id='cupomFinal'>
                             <h4>20% de desconto com o cupom</h4>
-                            
                             <h3 className='precoDesconto' id='cumpomDesconto'>
                                 <img id='imgDesconto'src={cupomDesconto}></img>
                                  NOVASEASON
