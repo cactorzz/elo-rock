@@ -188,3 +188,17 @@
     cursor: pointer;
     width: 60px;
 }
+
+.imgEloDivision:focus{
+    border: 2px solid red;
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgEloDivision .active {
+    
+
+
+
+}

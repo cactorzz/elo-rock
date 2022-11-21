@@ -14,11 +14,13 @@ export default function ServiceChoose(){
     const [imgEloAtual, setImg]=useState(prataLol)
     const [imgEloDesejado, setImgDesejado]=useState(diamanteLol)
    
-    const focarMiniatura = () =>{
-
-        if(onclick === document.getElementById('ferroMini')){
+    const focarMiniatura = (id) =>{
+       
+        if(id === 'ferroMini'){
+            
+           
             return ()=>setImg(ferroLol)
-        }else if(document.getElementById('bronzeMini')){
+        }else if(id === 'bronzeMini'){
             return()=>setImg(bronzeLol)
         }    
     }   
@@ -47,8 +49,8 @@ export default function ServiceChoose(){
                         </div>
                         <div className='divisionServiceContent'>
                             <div className='containerDivImg'>
-                                <img src={ferroLol} className='imgEloDivision' id='ferroMini'onClick={focarMiniatura()}></img>
-                                <img src={bronzeLol} className='imgEloDivision' id='bronzeMini' onClick={focarMiniatura()}></img>
+                                <img src={ferroLol} className='imgEloDivision' id='ferroMini'onClick={focarMiniatura('ferroMini')}></img>
+                                <img src={bronzeLol} className='imgEloDivision' id='bronzeMini' onClick={focarMiniatura('bronzeMini')}></img>
                                 <img src={prataLol} className='imgEloDivision' id='prataMini' onClick={()=>setImg(prataLol)}></img>
                                 <img src={ouroLol} className='imgEloDivision' id='ouroMini' onClick={()=>setImg(ouroLol)}></img>
                                 <img src={platinaLol} className='imgEloDivision' id='platinaMini' onClick={()=>setImg(platinaLol)}></img>
