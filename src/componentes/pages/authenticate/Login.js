@@ -1,8 +1,24 @@
 import React from 'react'
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { app } from '../../services/firebaseConfig'
+const emailInput = document.getElementById('emailInput')
+const passwordInput = document.getElementById('passwordInput')
+const btnLogin = document.getElementById('btnLogin')
 
 export const Login = () => {
-    const singWithEmailAndPassword = () =>{
-
+    const loginEmailPassword = () =>{
+        const auth = getAuth(app);
+        signInWithEmailAndPassword(auth, emailInput, passwordInput)
+            .then((userCredential) => {
+                alert('logasdo com sucesso')
+                const user = userCredential.user;
+                console.log(user)
+            })
+            .catch((error) => {
+                alert('erro')
+                const errorCode = error.code;
+                const errorMessage = error.message;
+            });
     }
     return (
         <>
@@ -19,18 +35,18 @@ export const Login = () => {
                             <input type='password' id='inputPassword' placeholder='**********.'/>
                             <div id='rememberMeContainer'>
                                 <input type='checkbox' id='rememberMe'></input>
-                                <label for='rememberMe' id='rememberMeLabel'>Lembrar senha</label>
+                                <label htmlFor='rememberMe' id='rememberMeLabel'>Lembrar senha</label>
                             </div>
                         </form>
                         <hr/>
                         <div id='btnLoginContainer'>
-                            <button href="index.html" class="btn btn-primary" id="btnLogin">Login</button>
+                            <button href="index.html" className="btn btn-primary" id="btnLogin" onClick={loginEmailPassword}>Login</button>
                         </div>
                         <hr/>
-                        <div class='text-center'>
+                        <div className='text-center'>
                             <a href='#'>Esqueceu a senha?</a>
                         </div>
-                        <div class='text-center'>
+                        <div className='text-center'>
                             <a href='#'>Criar uma conta</a>
                         </div>
                     </div>
