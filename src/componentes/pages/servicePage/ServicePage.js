@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Cards from './Card1'
-export default function ServicePage(){
+export default function ServicePage (){
     return(
         <section id='servicePage'>
             <div id='serviceTextContainer'>

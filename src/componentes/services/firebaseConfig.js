@@ -1,0 +1,14 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAuK0YtdcqtuwTndcFeUI-Br-Gbi4vdlQI",
+  authDomain: "elo-rock.firebaseapp.com",
+  projectId: "elo-rock",
+  storageBucket: "elo-rock.appspot.com",
+  messagingSenderId: "954816023711",
+  appId: "1:954816023711:web:3817bf25bbb8578d7326aa",
+  measurementId: "G-ZW61Y2MV6V"
+};
+
+export const app = initializeApp(firebaseConfig);
