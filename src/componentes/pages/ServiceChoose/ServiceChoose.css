@@ -67,13 +67,9 @@
 .divisionServiceContent{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 15%;
-    border: 1px solid  rgb(0, 0, 0, 40%);
-    box-shadow: 1px 10px 25px black;
-    background-color: rgb(0, 0, 0, 30%);
-    
-    border-radius: 50px;
+
    
 }
 #teste{
@@ -180,9 +176,11 @@
 }
 /* FIM MAIN FINALIZATE */
 
-
+#txtH5{
+    text-align: center;
+}
 .imgEloService{
-    width: 300px;
+    width: 250px;
 }
 .imgEloDivision{
     cursor: pointer;
@@ -196,9 +194,71 @@
     flex-direction: row;
 }
 
-.imgEloDivision .active {
+@media (max-width: 1069px){
+    #selectService{
+        font-size: 1.2em;
+        width: 310px;
+    }
+    .imgEloService{
+        width: 200px;
+    }
+    #eloAtual, #eloDesejado{
+        width: 50%;
+        height: 100%;
+        border-radius: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: -10px;
+        padding: 10px;
+       
+    }
+    #selectElo{
+        font-size: 1.0rem;
+        overflow-y: scroll
+    }
+    #footerService{
+        font-size: 0.6rem;
+    }
+    #txtServiços{
+        font-size: 1.2rem;
+    }
+    #checkboxAdd{
+        font-size: 0.8rem;
+    }
+    #txtH5{
+        font-size: 1.0rem;
+    }
     
+    #txtH4{
+        font-size: 1.2rem;
+    }
+    #txtH3{
+        font-size: 0.9rem;
+    }
+   
+}
 
-
-
+@media(max-width: 425px){
+    #mainFinalizate{
+        display: none;
+    }
+    #mainContent{
+        width: 100%;
+        border: 2px solid red;
+    }
+    #headerService{
+        height: 10%;
+    }
+    #serviceContent{
+        height: 80%;
+        border: 2px solid red;
+        align-items: center;
+    }
+    #serviceContent{
+        display: flex;
+        flex-direction: column;
+    }
+    #footerService{
+        height: 10%;
+    }
 }
