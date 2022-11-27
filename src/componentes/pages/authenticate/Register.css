@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+main{
+    font-family: 'Poppins', sans-serif;
+}
+#mainRegister{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#containerRegister{
+    width: 80%;
+    height: 85%;
+   
+    display: flex;
+}
+
+#txt{
+    color: white;
+}
+
+#imgRegister{
+    width: 40%;
+    height: 100%;
+    background-image: url('../../imgs/viegoPentakillImg.jpg');
+    background-position: center;
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#formRegisterContainer{
+    width: 60%;
+    height: 100%;
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inputRegister{
+    border-radius: 30px;
+    width: 50%;
+    height: 55px;
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    
+}
+#inputEmailRegister{
+    width: 100%;
+}
+
+#formRegister{
+    width: 90%;
+    height: 40%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.containerInput{
+    padding-bottom: 19px;
+}
+
+#btnRegisterContainer, #btnRegisterGoogleContainer{
+    width: 90%;
+    
+}
+
+#btnRegister, #btnRegisterGoogle{
+    width: 100%;
+}
+
+#linksAdicionais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

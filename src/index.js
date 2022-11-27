@@ -5,6 +5,7 @@ import './componentes/pages/servicePage/ServicePage.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './componentes/pages/authenticate/Login.css'
+import './componentes/pages/authenticate/Register.css'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

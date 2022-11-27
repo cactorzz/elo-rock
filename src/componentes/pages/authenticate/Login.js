@@ -27,7 +27,7 @@ export const Login = () => {
         <main id='mainLogin'>
             <nav id='containerLogin'>
                 <div id='imgLogin'>
-
+        
                 </div>
                 <div id='formLoginContainer'>
                     <div className='container-fluid' id='containerLoginForm'>
