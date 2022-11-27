@@ -2,7 +2,8 @@ import React from "react";
 import akaliNeon from '../imgs/akaliNeon.png'
 import nextImg from '../imgs/next.svg'
 import Header from '../pages/Header'
-export default function Home(){
+
+export const  Home = () =>{
     return(
         <>
         <main id="mainHome">
@@ -25,8 +26,6 @@ export default function Home(){
                 </div>
         </nav>
    </main>
-    
-    
         </>
     )
 }

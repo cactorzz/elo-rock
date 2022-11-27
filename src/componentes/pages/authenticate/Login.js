@@ -1,18 +1,20 @@
-import React from 'react'
+import {React, useState} from 'react'
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { app } from '../../services/firebaseConfig'
-const emailInput = document.getElementById('emailInput')
-const passwordInput = document.getElementById('passwordInput')
-const btnLogin = document.getElementById('btnLogin')
+
 
 export const Login = () => {
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
     const loginEmailPassword = () =>{
         const auth = getAuth(app);
-        signInWithEmailAndPassword(auth, emailInput, passwordInput)
+            signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
-                alert('logasdo com sucesso')
+                // Signed in 
+                alert('logado')
                 const user = userCredential.user;
-                console.log(user)
+                // ...
             })
             .catch((error) => {
                 alert('erro')
@@ -31,8 +33,8 @@ export const Login = () => {
                     <div className='container-fluid' id='containerLoginForm'>
                         <h1>Bem-vindo de Volta!</h1>
                         <form id='formLogin'>
-                            <input type='email' id='inputEmail' placeholder='Digite seu email...'/>
-                            <input type='password' id='inputPassword' placeholder='**********.'/>
+                            <input type='email' id='inputEmail' placeholder='Digite seu email...' value={email} onChange={(e) => setEmail(e.target.value)}/>
+                            <input type='password' id='inputPassword' placeholder='**********.'value={password} onChange={(e) => setPassword(e.target.value)}/>
                             <div id='rememberMeContainer'>
                                 <input type='checkbox' id='rememberMe'></input>
                                 <label htmlFor='rememberMe' id='rememberMeLabel'>Lembrar senha</label>
