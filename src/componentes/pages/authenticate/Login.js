@@ -1,6 +1,8 @@
 import {React, useState} from 'react'
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { app } from '../../services/firebaseConfig'
+import { Link } from 'react-router-dom';
+
 
 
 export const Login = () => {
@@ -49,7 +51,7 @@ export const Login = () => {
                             <a href='#'>Esqueceu a senha?</a>
                         </div>
                         <div className='text-center'>
-                            <a href='#'>Criar uma conta</a>
+                            <a><Link to='/register'>Criar uma conta</Link></a>
                         </div>
                     </div>
                 </div>
