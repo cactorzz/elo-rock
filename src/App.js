@@ -11,7 +11,7 @@ import SelectButton from './componentes/pages/ServiceChoose/SelectButton/SelectB
 function App() {
   return (
    <>
-    {/* <ServiceChoose/> */}
+    <Home/>
     <ServiceChoose/>
    </>
   );
