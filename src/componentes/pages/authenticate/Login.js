@@ -47,11 +47,13 @@ export const Login = () => {
                             <button href="index.html" className="btn btn-primary" id="btnLogin" onClick={loginEmailPassword}>Login</button>
                         </div>
                         <hr/>
-                        <div className='text-center addLinksLogin'>
-                            <a><Link to='/recover-password'>Esqueceu a senha?</Link></a>
-                        </div>
-                        <div className='text-center addLinksLogin'>
-                            <a><Link to='/register'>Criar uma conta</Link></a>
+                        <div id='addLinksLogin'>
+                            <div className='text-center addLinksLogin'>
+                                <a><Link to='/recover-password'>Esqueceu a senha?</Link></a>
+                            </div>
+                            <div className='text-center addLinksLogin'>
+                                <a><Link to='/register'>Criar uma conta</Link></a>
+                            </div>
                         </div>
                     </div>
                 </div>
