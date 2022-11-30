@@ -33,7 +33,7 @@ export const Login = () => {
                 </div>
                 <div id='formLoginContainer'>
                     <div className='container-fluid' id='containerLoginForm'>
-                        <h1>Bem-vindo de Volta!</h1>
+                        <h1 id='h1LoginTXT'>Bem-vindo de Volta!</h1>
                         <form id='formLogin'>
                             <input type='email' id='inputEmail' placeholder='Digite seu email...' value={email} onChange={(e) => setEmail(e.target.value)}/>
                             <input type='password' id='inputPassword' placeholder='**********.'value={password} onChange={(e) => setPassword(e.target.value)}/>
@@ -47,10 +47,10 @@ export const Login = () => {
                             <button href="index.html" className="btn btn-primary" id="btnLogin" onClick={loginEmailPassword}>Login</button>
                         </div>
                         <hr/>
-                        <div className='text-center'>
-                            <a href='#'>Esqueceu a senha?</a>
+                        <div className='text-center addLinksLogin'>
+                            <a><Link to='/recover-password'>Esqueceu a senha?</Link></a>
                         </div>
-                        <div className='text-center'>
+                        <div className='text-center addLinksLogin'>
                             <a><Link to='/register'>Criar uma conta</Link></a>
                         </div>
                     </div>

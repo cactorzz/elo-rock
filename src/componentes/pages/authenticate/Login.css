@@ -64,6 +64,7 @@ body{
 
 #btnLogin{
     width: 80%;
+    border-radius: 40px;
 }
 
 
@@ -93,13 +94,6 @@ body{
     transition: border-color 15s ease-in-out, box-shadow 15s ease-in-out;
 }
 
-#inputEmail:focus{
-    
-    box-shadow: 2px 2px 15px red;
-    
-}
-
-
 #rememberMeLabel{
     padding-left: 5px;
 }
@@ -114,4 +108,57 @@ body{
 #formLoginContainer h1{
     color: #6e707e;
     padding-bottom: 25px;
+}
+@media (min-width: 1970px){
+    #imgLogin{
+        background-size: 1500px;
+    }
+    #formLoginContainer h1{
+        font-size: 3.5rem;
+    }
+    #btnLogin{
+        font-size: 1.7rem;
+    }
+    .addLinksLogin{
+        font-size: 1.5rem;
+    }
+    #containerLoginForm{
+        border: 2px solid red;
+    }
+    #inputEmail, #inputPassword{
+        width: 80%;
+        height: 50px;
+        color: #6e707e;
+        border-radius: 40px;
+        padding-left: 20px;
+        border: 1px solid #6e707e;
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+        transition: border-color 15s ease-in-out, box-shadow 15s ease-in-out;
+    }
+}
+@media (max-width: 767px){
+    #imgLogin{
+        display: none;
+    }
+    #formLoginContainer{
+        width: 100%;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+}
+
+@media (max-width: 374px){
+    #h1LoginTXT{
+        font-size: 0.5rem;
+    }
+    #inputEmail{
+        padding-left: px;
+    }
+}
+
+@media (max-height: 650px){
+    #formLoginContainer{
+        height: 100vh;
+    }
 }

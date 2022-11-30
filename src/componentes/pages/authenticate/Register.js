@@ -13,20 +13,20 @@ export const Register = () =>{
 
     const registerWithPasswordAndEmail = () =>{
 
-        const auth = getAuth();
-            createUserWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-            const user = userCredential.user;
-            })
-            .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-            });
-        console.log(`${firstName}
-        ${lastName}
-        ${registerEmail}
-        ${registerPassword}
-        ${registerPasswordConfirm}`)
+        // const auth = getAuth();
+        //     createUserWithEmailAndPassword(auth, email, password)
+        //     .then((userCredential) => {
+        //     const user = userCredential.user;
+        //     })
+        //     .catch((error) => {
+        //         const errorCode = error.code;
+        //         const errorMessage = error.message;
+        //     });
+        // console.log(`${firstName}
+        // ${lastName}
+        // ${registerEmail}
+        // ${registerPassword}
+        // ${registerPasswordConfirm}`)
     }
 
     return(
@@ -63,8 +63,9 @@ export const Register = () =>{
                         
                     <div id='linksAdicionais'>
                         <hr/>
-                        <a>Esqueceu a senha?</a>
                         <a><Link to='/login'>Já tem uma conta? Faça login!</Link></a>
+                        <a><Link to='/recover-password'>Esqueceu a senha?</Link></a>
+                        
                     </div>
                 </div>
             </div>
