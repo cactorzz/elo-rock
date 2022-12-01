@@ -30,10 +30,6 @@ main{
 
 #tituloRegister{
     color:#6e707e;
-    height: 13%;
-    display: flex;
-    
-    align-items: flex-end;
 }
 #imgRegister{
     width: 40%;
@@ -53,7 +49,7 @@ main{
     background-color: white;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
-    
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,22 +73,48 @@ main{
     width: 100%;
 }
 
-#formRegister{
-    width: 80%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 .containerInput{
     padding-bottom: 19px;
 }
 
-#btnRegisterContainer, #btnRegisterGoogleContainer{
-    width: 80%;
-
-    
+#textRegisterForm{
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
 }
+
+#formRegister{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#btnRegisterContainer{
+    width: 80%;
+    height: 20%;
+}
+
+#linksAdicionais{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+}
+#linksContainer{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+}
+
+#inputFirstName, #inputPasswordRegister{
+    margin-right: 10px;
+}
+
 
 #btnRegister, #btnRegisterGoogle{
     width: 100%;
@@ -102,9 +124,33 @@ main{
 #btnRegisterGoogle{
     padding-right: 10px;
 }
-
-#linksAdicionais{
+#registerPassword{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
 
+@media (max-width: 755px){
+    #imgRegister{
+        display: none;
+    }
+    #formRegisterContainer{
+        width: 100%;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    #registerName{
+        flex-direction: column;
+    }
+    .inputRegister{
+        width: 100%;
+    }
+    #inputFirstName, #inputLastName{
+        margin-bottom: 10px;
+    }
+    #formRegister{
+        height: 60%;
+    }
+    #textRegisterForm{
+        height: 20%;
+    }
 }

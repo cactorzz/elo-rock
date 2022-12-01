@@ -37,7 +37,9 @@ export const Register = () =>{
                 
                 </div>
                 <div id='formRegisterContainer'>
-                    <h1 id='tituloRegister'>Crie uma conta!</h1>
+                    <div id='textRegisterForm'>
+                        <h1 id='tituloRegister'>Crie uma conta!</h1>
+                    </div>
                     <form id='formRegister'>
                         <div id='registerName' className='containerInput'>
                             <input type='text' id='inputFirstName' placeholder='Primeiro Nome' className='inputRegister' value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
@@ -47,8 +49,8 @@ export const Register = () =>{
                             <input type='email' id='inputEmailRegister' placeholder='Digite seu email...' className='inputRegister' value={registerEmail} onChange={(e) => setRegisterEmail(e.target.value)}/>
                             </div>
                         <div id='registerPassword' className='containerInput'>
-                            <input type='password'  placeholder='Senha' className='inputRegister' value={registerPassword} onChange={(e) => setRegisterPassword(e.target.value)}/>
-                            <input type='password'  placeholder='Repita sua senha' className='inputRegister' value={registerPasswordConfirm}
+                            <input type='password'  placeholder='Senha' className='inputRegister' id='inputPasswordRegister' value={registerPassword} onChange={(e) => setRegisterPassword(e.target.value)}/>
+                            <input type='password'  placeholder='Repita sua senha' className='inputRegister'  value={registerPasswordConfirm}
                             onChange={(e) => setRegisterPasswordConfirm(e.target.value)}/>
                         </div>
                     </form>
@@ -56,17 +58,13 @@ export const Register = () =>{
                         <button className='btn btn-primary' id='btnRegister' onClick={registerWithPasswordAndEmail} >Registrar conta</button>
                         <hr/>
                     </div>
-                    <div id='btnRegisterGoogleContainer'>
-                        <i className="bi bi-google"></i>
-                        <button className='btn btn-danger' id='btnRegisterGoogle'>Registre-se com o Google</button>
-                        </div>
-                        
                     <div id='linksAdicionais'>
-                        <hr/>
-                        <a><Link to='/login'>Já tem uma conta? Faça login!</Link></a>
-                        <a><Link to='/recover-password'>Esqueceu a senha?</Link></a>
-                        
+                        <div id='linksContainer'>
+                            <a id='teste2'><Link to='/login'>Já tem uma conta? Faça login!</Link></a>
+                            <a><Link to='/recover-password'>Esqueceu a senha?</Link></a>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
          </main>
