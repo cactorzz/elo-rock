@@ -60,7 +60,8 @@ export const Register = () =>{
                     </div>
                     <div id='linksAdicionais'>
                         <div id='linksContainer'>
-                            <a id='teste2'><Link to='/login'>Já tem uma conta? Faça login!</Link></a>
+                            <a ><Link to='/login'>Já tem uma conta? Faça login!</Link></a>
+                            
                             <a><Link to='/recover-password'>Esqueceu a senha?</Link></a>
                         </div>
                     </div>

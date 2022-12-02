@@ -36,11 +36,12 @@ body{
     height: 100%;
     width: 40%;
     background-image: url('../../imgs/viegoPentakillImg.jpg');
-    background-position: center;
-    background-size: 1000px;
-    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100%;
+    background-size: cover;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
+    background-repeat: no-repeat;
 }
 
 #formLoginContainer{
@@ -105,6 +106,9 @@ body{
     flex-direction: column;
     
     color: #6e707e;
+}
+#h1LoginTXTContainer p {
+    font-size: 1.7rem;
 }
 
 
