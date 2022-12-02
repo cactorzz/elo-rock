@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
 
 body{
@@ -28,7 +33,7 @@ body{
 
 }
 #imgLogin{
-    height: 70%;
+    height: 100%;
     width: 40%;
     background-image: url('../../imgs/viegoPentakillImg.jpg');
     background-position: center;
@@ -54,25 +59,12 @@ body{
    text-align: center;
 }
 
-#formLogin{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    
-}
-
 #btnLogin{
     width: 80%;
     border-radius: 40px;
 }
 
 
-#btnLoginContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 #containerLoginForm{
     width: 100%;
     height: 100%;
@@ -105,98 +97,80 @@ body{
     
 }
 
-#formLoginContainer h1{
+#h1LoginTXTContainer{
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    
     color: #6e707e;
-    padding-bottom: 25px;
 }
-@media (min-height: 1000px){
+
+
+#formLogin{
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+
+#btnLoginContainer{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#addLinksLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20%; 
+    border-top: 1px solid rgb(0, 0, 0, 20%);
+    
+    
+}
+
+
+@media (min-height: 825px){
+    #imgLogin{
+        background-size: 1200px;
+    }
+}
+
+ @media (min-height: 1000px){
     #imgLogin{
         background-size: 1500px;
     }
     #formLoginContainer h1{
-        font-size: 3.5rem;
+        font-size: 3.0rem;
     }
-    #btnLogin{
-        font-size: 1.7rem;
-    }
-    .addLinksLogin{
-        font-size: 1.5rem;
-    }
-
     #inputEmail, #inputPassword{
-        width: 100%;
         height: 80px;
-        color: #6e707e;
-        
     }
-    #inputEmail,#inputPassword::placeholder{
+    #inputEmail, #inputPassword::placeholder{
         font-size: 1.5rem;
     }
-    #rememberMeContainer{
-        width: 100%;
+    #rememberMe{
+        width: 20px;
     }
     #rememberMeLabel{
         font-size: 1.5rem;
     }
-    #rememberMe{
-        width: 25px;
+    #btnLoginContainer button{
+        font-size: 2.0rem;
     }
-    #addLinksLogin{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 25%;
+    .addLinksLogin a{
         font-size: 1.7rem;
-    }
-    #btnLogin{
-        width: 100%;
     }
 }
 
-
-@media (min-width: 1900px){
-    #imgLogin{
-        background-size: 1500px;
-    }
-    #formLoginContainer h1{
-        font-size: 3.5rem;
-    }
-    #btnLogin{
-        font-size: 1.7rem;
-    }
-    .addLinksLogin{
-        font-size: 1.5rem;
-    }
-
-    #inputEmail, #inputPassword{
-        width: 100%;
-        height: 80px;
-        color: #6e707e;
-        
-    }
-    #inputEmail,#inputPassword::placeholder{
-        font-size: 1.5rem;
-    }
-    #rememberMeContainer{
-        width: 100%;
-    }
-    #rememberMeLabel{
-        font-size: 1.5rem;
-    }
-    #rememberMe{
-        width: 25px;
-    }
-    #addLinksLogin{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 25%;
-        font-size: 1.8rem;
-    }
-}
-
+  
 
 @media (max-width: 900px){
     #imgLogin{

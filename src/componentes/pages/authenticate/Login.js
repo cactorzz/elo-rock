@@ -33,7 +33,10 @@ export const Login = () => {
                 </div>
                 <div id='formLoginContainer'>
                     <div className='container-fluid' id='containerLoginForm'>
-                        <h1 id='h1LoginTXT'>Bem-vindo de Volta!</h1>
+                        <div id='h1LoginTXTContainer'>
+                            <h1>Bem-vindo de volta!</h1>
+                            <p>Faça login abaixo</p>
+                        </div>
                         <form id='formLogin'>
                             <input type='email' id='inputEmail' placeholder='Digite seu email...' value={email} onChange={(e) => setEmail(e.target.value)}/>
                             <input type='password' id='inputPassword' placeholder='**********.'value={password} onChange={(e) => setPassword(e.target.value)}/>
@@ -42,18 +45,14 @@ export const Login = () => {
                                 <label htmlFor='rememberMe' id='rememberMeLabel'>Lembrar senha</label>
                             </div>
                         </form>
-                        <hr/>
+                       
                         <div id='btnLoginContainer'>
                             <button href="index.html" className="btn btn-primary" id="btnLogin" onClick={loginEmailPassword}>Login</button>
                         </div>
-                        <hr/>
                         <div id='addLinksLogin'>
-                            <div className='text-center addLinksLogin'>
-                                <a><Link to='/recover-password'>Esqueceu a senha?</Link></a>
-                            </div>
-                            <div className='text-center addLinksLogin'>
-                                <a><Link to='/register'>Criar uma conta</Link></a>
-                            </div>
+                            <a className='text-center addLinksLogin'><Link to='/recover-password'>Esqueceu a senha?</Link></a>
+                            
+                            <a className='text-center addLinksLogin'><Link to='/register'>Criar uma conta</Link></a> 
                         </div>
                     </div>
                 </div>
