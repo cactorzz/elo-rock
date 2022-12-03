@@ -38,7 +38,7 @@ export const Register = () =>{
                 </div>
                 <div id='formRegisterContainer'>
                     <div id='textRegisterForm'>
-                        <h1 id='tituloRegister'>Crie uma conta!</h1>
+                        <h1 id='tituloRegister'>Crie sua conta!</h1>
                     </div>
                     <form id='formRegister'>
                         <div id='registerName' className='containerInput'>

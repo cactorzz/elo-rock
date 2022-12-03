@@ -152,6 +152,9 @@ main{
     #imgRegister{
         display: none;
     }
+    #textRegisterForm h1{
+        font-size: 2.0rem;
+    }
     #formRegisterContainer{
         width: 100%;
         border-bottom-left-radius: 20px;
