@@ -13,18 +13,16 @@ export const Register = () =>{
     const [registerPasswordConfirm, setRegisterPasswordConfirm] = useState('')
     
     async function registerWithPasswordAndEmail() {
-        try {
-            const docRef = await addDoc(collection(firestore, "users"), {
-                name: firstName,
-                middle: lastName,
-                email: registerEmail
-            });
-          
-            alert('criado com sucesso ' +docRef.id);
-        } catch (e) {
-            alert('erro ' + e);
-          }
-    }
+        await setDoc(doc(firebase, 'users', 'userTeste'),{
+            name: firstName,
+            middle: lastName,
+            email: registerEmail
+        })
+        .then(()=>{
+            alert('cadastrado com sucesso')
+        })
+        .catch(()=>)
+                
     
     return(
          <main id='mainRegister'>
