@@ -1,7 +1,8 @@
 import {React, useState} from 'react'
 import { Link } from 'react-router-dom'
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { app } from '../../services/firebaseConfig'
+import {firestore} from '../../services/firebaseConfig'
+import { collection, addDoc, doc, setDoc, updateDoc } from "firebase/firestore"; 
 
 export const Register = () =>{
 
@@ -10,27 +11,22 @@ export const Register = () =>{
     const [registerEmail, setRegisterEmail] = useState('')
     const [registerPassword, setRegisterPassword] = useState('')
     const [registerPasswordConfirm, setRegisterPasswordConfirm] = useState('')
-
-    const registerWithPasswordAndEmail = () =>{
-
-        // const auth = getAuth();
-        //     createUserWithEmailAndPassword(auth, email, password)
-        //     .then((userCredential) => {
-        //     const user = userCredential.user;
-        //     })
-        //     .catch((error) => {
-        //         const errorCode = error.code;
-        //         const errorMessage = error.message;
-        //     });
-        // console.log(`${firstName}
-        // ${lastName}
-        // ${registerEmail}
-        // ${registerPassword}
-        // ${registerPasswordConfirm}`)
+    
+    async function registerWithPasswordAndEmail() {
+        try {
+            const docRef = await addDoc(collection(firestore, "users"), {
+                name: firstName,
+                middle: lastName,
+                email: registerEmail
+            });
+          
+            alert('criado com sucesso ' +docRef.id);
+        } catch (e) {
+            alert('erro ' + e);
+          }
     }
-
+    
     return(
-        <>
          <main id='mainRegister'>
             <div id='containerRegister'>
                 <div id='imgRegister'>
@@ -60,15 +56,14 @@ export const Register = () =>{
                     </div>
                     <div id='linksAdicionais'>
                         <div id='linksContainer'>
-                            <a ><Link to='/login'>Já tem uma conta? Faça login!</Link></a>
+                            <Link to='/login'>Já tem uma conta? Faça login!</Link>
                             
-                            <a><Link to='/recover-password'>Esqueceu a senha?</Link></a>
+                            <Link to='/recover-password'>Esqueceu a senha?</Link>
                         </div>
                     </div>
-                    
                 </div>
             </div>
          </main>
-        </>
+        
     )
 }
