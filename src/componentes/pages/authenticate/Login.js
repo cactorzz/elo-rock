@@ -1,6 +1,6 @@
 import {React, useState} from 'react'
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
-// import { app } from '../../services/firebaseConfig'
+import { app } from '../../services/firebaseConfig'
 import { Link } from 'react-router-dom';
 
 
