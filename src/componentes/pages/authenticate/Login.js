@@ -13,13 +13,22 @@ export const Login = () => {
         const auth = getAuth(app);
             signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
-                // Signed in 
                 alert('logado')
                 const user = userCredential.user;
-                // ...
+                
             })
             .catch((error) => {
-                alert('erro')
+                if (error.code === 'auth/user-not-found'){
+                    alert('Usuário não encontrado')
+                }else if(error.code === 'auth/invalid-email'){
+                    alert('Email inválido')
+                }else if(error.code === 'auth/wrong-password'){
+                    alert('Senha ou email incorretos')
+                }else{
+                    alert('Ocorreu um erro, se o problema persistir informe o erro ao suporte. \nERRO:' + error)
+                }
+
+                
                 const errorCode = error.code;
                 const errorMessage = error.message;
             });

@@ -1,6 +1,6 @@
 import {React, useState} from 'react'
 import { Link } from 'react-router-dom'
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, displayName } from "firebase/auth";
 import {app, firestore} from '../../services/firebaseConfig'
 import { setDoc, getFirestore, doc } from "firebase/firestore"; 
 
@@ -34,7 +34,7 @@ export const Register = () =>{
                             password: registerPassword,
                             userLevel: 'user'
                         });
-                    <Router path=/>
+                  
                     alert('sucesso')
                     })
                     .catch((error) => {

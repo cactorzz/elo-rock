@@ -1,12 +1,14 @@
 import {React, useState} from 'react'
 import { Link } from 'react-router-dom'
-
+import { getAuth } from "firebase/auth";
 export const RecoverPassword = () => {
 
     const [email, setEmail] = useState('')
     
     const sendEmail = () =>{
-        alert(email)
+     
+        
+        
     }
     return (
             <main id='MainRecoverPassword'>
