@@ -13,11 +13,29 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
+import { createTheme } from '@mui/material/styles';
+import { cachedDataVersionTag } from 'v8';
 
 const pages = ['EloJob', 'DuoBoost', 'Sobre nós', ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#c1c1c1c1'
+    },
+    secondary: {
+      main: '#c65'
+    }
+    
+  }
+})
+
+
+
 
 function Header() {
+  
+
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
@@ -36,8 +54,12 @@ function Header() {
     setAnchorElUser(null);
   };
 
+
+
   return (
-    <AppBar position="static" >
+    
+  //  sx com duas chaves, tipo sx {{}} é usado para colocar os styles dentro de um componente do MUI. Mudei a padrão do seu teclado
+    <AppBar position="sticky" id='appbar'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -54,67 +76,22 @@ function Header() {
               color: 'inherit',
               textDecoration: 'none',
             }}
-          >
+          > 
             ELOROCK
           </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-                color: '',
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-        
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))}
+            <Button variant="text" sx={{color: '#f1f1f1f1'}}>EloJob</Button>
+            <Button variant="text" sx={{color: '#f1f1f1f1'}}>Duoboost</Button>
+            <Button variant="text" sx={{color: '#f1f1f1f1'}}>Sobre nós</Button>
           </Box>
+          
           <Tooltip title='Fazer Login'>
-            <Button variant="contained" startIcon={<AssignmentIndIcon/>}>Fazer login</Button>
+            <Button variant="contained" startIcon={<AssignmentIndIcon/>} id='buttontesteste'>Fazer login</Button>
           </Tooltip>
         
         </Toolbar>
       </Container>
-    </AppBar>
+    </AppBar> 
   );
 }
 export default Header;
