@@ -1,0 +1,264 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; 
+}
+#ServiceChooseMain{
+    height: 100vh;   
+    display: flex;
+}
+
+/* main content */
+#mainContent{
+    height: 100%;
+    width: 70%;
+    box-shadow: 5px 5px 25px black;
+    background-image: url('../../imgs/lol.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#headerService{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#headerChoose{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#selectService{
+    font-size: 1.7em;
+    width: 310px;
+}
+/* FIM MAIN CONTENT */
+/* SERVICE CONTENT */
+#serviceContent{
+    height: 70%;
+    display: flex;
+    
+
+}
+#eloAtual, #eloDesejado{
+    width: 50%;
+    height: 100%;
+    
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -10px;
+    padding: 10px;
+   
+}
+.txtServiceContent{
+    color: white;
+    height: 10%;
+    text-align: center;
+}
+.imgServiceContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+}
+.divisionServiceContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15%;
+
+   
+}
+#teste{
+    width: 100px;
+}
+
+
+/* FIM MAIN CONTENT */
+
+#txtFinality{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#adicionaisFinality{
+    height: 50%;
+    border-bottom: 1px solid grey;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll
+}
+.text-decoration-line-through{
+    color: red;
+}
+#inputFinality{
+    width: 100%;
+    height: 100%;
+}
+#inputFilityContainer{
+    padding: 10px;
+}
+#finalizarFinality{
+   height: 40%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+
+}
+#finalPrice{
+    display: flex;
+}
+
+#cupomFinal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.precoDesconto{
+    color: green;
+}
+#imgDesconto{
+    width: 50px;
+    
+}
+
+#cumpomDesconto{
+    color: white;
+    background-color: green;
+    display: flex;
+}
+/* FOOTER CONTENT */
+#footerService{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+    box-shadow: 5px 5px 25px black;
+    background-color: rgb(0, 0, 0, 70%);
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+   
+}
+/* FIM FOOTER CONTENT */
+
+
+
+
+/* MAIN FINALIZATE */
+#mainFinalizate{
+    height: 100%;
+    width: 30%;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-color:  linear-gradient(#444cf7 0.5px, transparent 0.5px), linear-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+}
+
+#finalityService{
+    height: 100%;
+}
+
+.btn-finalizar{
+    box-shadow: 1px 10px 25px black;
+}
+/* FIM MAIN FINALIZATE */
+
+#txtH5{
+    text-align: center;
+}
+.imgEloService{
+    width: 250px;
+}
+.imgEloDivision{
+    cursor: pointer;
+    width: 60px;
+}
+
+.imgEloDivision:focus{
+    border: 2px solid red;
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1069px){
+    #selectService{
+        font-size: 1.2em;
+        width: 310px;
+    }
+    .imgEloService{
+        width: 200px;
+    }
+    #eloAtual, #eloDesejado{
+        width: 50%;
+        height: 100%;
+        border-radius: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: -10px;
+        padding: 10px;
+       
+    }
+    #selectElo{
+        font-size: 1.0rem;
+        overflow-y: scroll
+    }
+    #footerService{
+        font-size: 0.6rem;
+    }
+    #txtServiços{
+        font-size: 1.2rem;
+    }
+    #checkboxAdd{
+        font-size: 0.8rem;
+    }
+    #txtH5{
+        font-size: 1.0rem;
+    }
+    
+    #txtH4{
+        font-size: 1.2rem;
+    }
+    #txtH3{
+        font-size: 0.9rem;
+    }
+   
+}
+
+@media(max-width: 425px){
+    #mainFinalizate{
+        display: none;
+    }
+    #mainContent{
+        width: 100%;
+        border: 2px solid red;
+    }
+    #headerService{
+        height: 10%;
+    }
+    #serviceContent{
+        height: 80%;
+        border: 2px solid red;
+        align-items: center;
+    }
+    #serviceContent{
+        display: flex;
+        flex-direction: column;
+    }
+    #footerService{
+        height: 10%;
+    }
+}
