@@ -1,12 +1,31 @@
-#buttontesteste{
-    background-color: brown;
+#appBar{
+    background-color: rgb(153, 0, 0, 30%);
 }
-#appbar{
-    background-color: rgb(255, 0, 0, 80%);
-    backdrop-filter: blur(5px);
+#ButtonsAppBarMobile Button{
+    display: flex;
+    flex-direction: column;
+    color: #1C1C1C	;
+    width: 100%;
 }
 
-#testestesteste{
-    background-color: black;
-    height: 200vh;
+#ButtonsAppBarPc Button{
+    color: #F1F1F1F1;
 }
+#AreaDoClienteBtn{
+    color: #f1f1f1f1;
+    border: 0.1rem solid #f1f1f1f1;
+}
+
+#elorockTxt{
+    color: #f1f1f1f1;
+}
+#elorockTxt:hover{
+    color:#D3D3D3;
+}
+
+#elorockTxt:active{
+    color: #A9A9A9	;
+}
+
+
+

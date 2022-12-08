@@ -13,36 +13,19 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
-import { createTheme } from '@mui/material/styles';
-import { cachedDataVersionTag } from 'v8';
 
-const pages = ['EloJob', 'DuoBoost', 'Sobre nós', ];
+
+const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#c1c1c1c1'
-    },
-    secondary: {
-      main: '#c65'
-    }
-    
-  }
-})
 
+function ResponsiveAppBar() {
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-
-
-function Header() {
-  
-
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
-
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+  const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
+  const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
 
@@ -54,44 +37,102 @@ function Header() {
     setAnchorElUser(null);
   };
 
-
-
   return (
-    
-  //  sx com duas chaves, tipo sx {{}} é usado para colocar os styles dentro de um componente do MUI. Mudei a padrão do seu teclado
-    <AppBar position="sticky" id='appbar'>
+    <AppBar position="sticky" id='appBar'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
+          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
               textDecoration: 'none',
             }}
-          > 
+            id='elorockTxt'
+          >
+            ELOROCK
+          </Typography>
+
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: 'block', md: 'none' },
+              }}
+            >
+              <div id='ButtonsAppBarMobile'>
+                <Button variant='text'>ELOJOB</Button>
+                <Button variant='text'>DUOBOOST</Button>
+                <Button variant='text'>SOBRE NÓS</Button>
+              </div>
+
+            </Menu>
+          </Box>
+          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href=""
+            sx={{
+              mr: 2,
+              display: { xs: 'flex', md: 'none' },
+              flexGrow: 1,
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+
+              textDecoration: 'none',
+            }}
+            id='elorockTxt'
+          >
             ELOROCK
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            <Button variant="text" sx={{color: '#f1f1f1f1'}}>EloJob</Button>
-            <Button variant="text" sx={{color: '#f1f1f1f1'}}>Duoboost</Button>
-            <Button variant="text" sx={{color: '#f1f1f1f1'}}>Sobre nós</Button>
+          <div id='ButtonsAppBarPc'>
+                <Button variant='text'>ELOJOB</Button>
+                <Button variant='text'>DUOBOOST</Button>
+                <Button variant='text'>SOBRE NÓS</Button>
+              </div>
           </Box>
-          
-          <Tooltip title='Fazer Login'>
-            <Button variant="contained" startIcon={<AssignmentIndIcon/>} id='buttontesteste'>Fazer login</Button>
-          </Tooltip>
-        
+
+          <Box sx={{ flexGrow: 0 }}>
+            <Tooltip title="Faça login ou se cadastre.">
+             <Button variant='outlined' startIcon={<AssignmentIndIcon/>} id='AreaDoClienteBtn'>Area do Cliente</Button>
+            </Tooltip>
+            
+          </Box>
         </Toolbar>
       </Container>
-    </AppBar> 
+    </AppBar>
   );
 }
-export default Header;
+export default ResponsiveAppBar;
