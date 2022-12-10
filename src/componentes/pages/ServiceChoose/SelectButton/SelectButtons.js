@@ -1,5 +1,5 @@
 import React  from "react";
-
+import './SelectButtons.css'
 export default function SelectButtons(){
     return(
         <div id='all'>
