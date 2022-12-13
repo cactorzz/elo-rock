@@ -8,7 +8,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './componentes/pages/authenticate/Login.css'
 import './componentes/pages/authenticate/Register.css'
-import './componentes/pages/authenticate/RecoverPassword.css'import './componentes/pages/homepage/home.css'
+import './componentes/pages/authenticate/RecoverPassword.css'
+import './componentes/pages/homepage/home.css'
 import './componentes/pages/header/header.css'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
