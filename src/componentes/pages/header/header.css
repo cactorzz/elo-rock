@@ -10,12 +10,16 @@
 
 #ButtonsAppBarPc Button{
     color: #F1F1F1F1;
+    text-decoration: none;
 }
 #AreaDoClienteBtn{
     color: #f1f1f1f1;
     border: 0.1rem solid #f1f1f1f1;
 }
-
+#linkAreaCliente{
+    text-decoration: none;
+    color: #f1f1f1f1;
+}
 #elorockTxt{
     color: #f1f1f1f1;
 }

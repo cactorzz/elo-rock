@@ -13,12 +13,13 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
+import { Link } from 'react-router-dom';
 
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
-function ResponsiveAppBar() {
+export const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -126,7 +127,7 @@ function ResponsiveAppBar() {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Faça login ou se cadastre.">
-             <Button variant='outlined' startIcon={<AssignmentIndIcon/>} id='AreaDoClienteBtn'>Area do Cliente</Button>
+             <Button variant='outlined' startIcon={<AssignmentIndIcon/>} id='AreaDoClienteBtn'><Link to='/login' id='linkAreaCliente'>Area do Cliente</Link></Button>
             </Tooltip>
             
           </Box>
@@ -135,4 +136,4 @@ function ResponsiveAppBar() {
     </AppBar>
   );
 }
-export default ResponsiveAppBar;
+export default Header;

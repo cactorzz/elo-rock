@@ -1,7 +1,7 @@
 import React from "react";
-
 import Header from "../header/Header.tsx";
-export default function Home(){
+
+export const Home = () =>{
     return(
         <main id='homePage'>
             <div id='header'>
@@ -20,3 +20,5 @@ export default function Home(){
         </main>
     )
 }
+
+export default Home
