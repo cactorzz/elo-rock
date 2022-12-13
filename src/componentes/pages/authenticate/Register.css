@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+main{
+    font-family: 'Poppins', sans-serif;
+}
+#mainRegister{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+
+    background: rgb(13,111,255);
+    background: linear-gradient(-45deg, rgba(13,111,255,1) 0%, rgba(13,94,255,1) 16%, rgba(13,94,255,1) 33%, rgba(10,75,204,1) 89%, rgba(6,46,127,1) 100%);
+    background-size: 400% 400%;
+    position: relative;
+    animation: animate 7.5s ease-in-out infinite;
+}
+
+#containerRegister{
+    width: 80%;
+    height: 85%;
+    display: flex;
+}
+
+
+#textRegisterForm h1{
+    font-size: 3.5rem;
+    color:#1C1C1C;
+}
+#imgRegister{
+    width: 40%;
+    height: 100%;
+    background-image: url('../../imgs/viegoPentakillImg.jpg');
+    background-position: center center;
+    min-height: 100%;
+    background-size: cover;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-repeat: no-repeat;
+}
+
+#formRegisterContainer{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inputRegister{
+    border-radius: 50px;
+    width: 50%;
+    height: 70px;
+    border: 1px solid #6e707e;
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;  
+}
+.inputRegister::placeholder{
+    font-size: 1.2rem;
+}
+#registerName{
+    display: flex;
+    justify-content: space-around;
+}
+#inputEmailRegister{
+    width: 100%;
+}
+
+
+.containerInput{
+    padding-bottom: 19px;
+}
+
+#textRegisterForm{
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#formRegister{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#btnRegisterContainer{
+    width: 80%;
+    height: 20%;
+}
+
+#linksAdicionais{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    font-size: 1.3rem;
+    flex-direction: column;
+    margin-top: -30px;
+}
+#linksContainer{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+}
+
+#inputFirstName, #inputPasswordRegister{
+    margin-right: 10px;
+}
+
+
+#btnRegister, #btnRegisterGoogle{
+    width: 100%;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+}
+#btnRegisterGoogle{
+    padding-right: 10px;
+}
+#registerPassword{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1366px){
+    #textRegisterForm h1{
+        font-size: 2.4rem;
+    }
+    .inputRegister{
+        height: 60px;  
+    }
+    .inputRegister::placeholder{
+        font-size: 0.9rem;
+    }
+    #btnRegister{
+        font-size: 1.1rem;
+        height: 55px;
+    }
+    #linksAdicionais{
+        font-size: 1.0rem;
+    }
+}
+
+@media (max-width: 755px){
+    #imgRegister{
+        display: none;
+    }
+    #textRegisterForm h1{
+        font-size: 2.0rem;
+    }
+    #formRegisterContainer{
+        width: 100%;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    #registerName{
+        flex-direction: column;
+    }
+    .inputRegister{
+        width: 100%;
+    }
+    #inputFirstName, #inputLastName{
+        margin-bottom: 10px;
+    }
+    #formRegister{
+        height: 60%;
+    }
+    #textRegisterForm{
+        height: 20%;
+    }
+}

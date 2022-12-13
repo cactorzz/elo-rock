@@ -4,17 +4,12 @@ import { Button } from 'reactstrap';
 import Home from './componentes/pages/homepage/Home'
 import ServicePage from './componentes/pages/servicePage/ServicePage';
 import Cards from './componentes/pages/servicePage/Card1'
-import Header from './componentes/pages/header/Header.tsx';
-import ServiceChoose from './componentes/pages/ServiceChoose/ServiceChoose';
-import SelectButton from './componentes/pages/ServiceChoose/SelectButton/SelectButtons'
+import Example from './componentes/pages/Header';
+import { AppRoutes } from './routes/routes';
+
 
 function App() {
-  return (
-   <>
-    <Home/>
-    <ServiceChoose/>
-   </>
-  );
+  return <AppRoutes/>
 }
-
+ 
 export default App;
